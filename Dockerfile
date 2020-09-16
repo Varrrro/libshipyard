@@ -1,4 +1,4 @@
-FROM gcc:10 AS build
+FROM gcc:10
 
 # Change dir and copy files
 WORKDIR /shipyard

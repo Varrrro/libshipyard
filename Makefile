@@ -7,10 +7,10 @@ BUILD_DIR = build
 
 all: checkdir libshipyard.a
 
-libshipyard.a: sched.o
+libshipyard.a: shipyard.o
 	ar rcs $(BUILD_DIR)/$@ $(BUILD_DIR)/$<
 
-sched.o: sched.c sched.h
+shipyard.o: shipyard.c shipyard.h
 	$(CC) -o $(BUILD_DIR)/$@ -c $<
 
 checkdir:
