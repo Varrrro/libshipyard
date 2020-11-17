@@ -31,4 +31,4 @@ jobs:
         platforms: linux/amd64,linux/arm64,linux/arm/v7
         tags: |
           varrrro/libshipyard:latest
-          varrrro/libshipyard:${GITHUB_REF}
+          varrrro/libshipyard:${{ env.GITHUB_REF }}
